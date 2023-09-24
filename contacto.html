@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://planiesg.herokuapp.com/es/contacto -->
+<html lang="es" class="js" style="overflow-x: hidden"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Plani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://planiesg.herokuapp.com/static/images/favicon-plani.png">
+    <style>
+        .preloader,
+        .preloader2,
+        .form-process {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .preloader {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            c
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999999;
+            background-color: #ffffff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center !important;
+        }
+
+        .preloader img {
+            width: 200px;
+        }
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: var(--font-family-elementia);
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: var(--font-family-elementia);
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: var(--font-family-elementia);
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .search-container {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            box-shadow: 2em 0 0 black;
+            width: 100%;
+        }
+
+        .search-box {
+            right: 7%;
+        / / right: 0;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            padding-left: 2em;
+        / / -webkit-transform: translateX(20 %);
+        / / transform: translateX(20 %);
+            opacity: 0;
+        / / transition: all 0.4 s 0.3 s;
+            background-color: #222;
+            color: white;
+        }
+
+        .search-box .search-input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            caret-color: white;
+            color: white;
+        }
+
+        .search-box input::placeholder { /* Chrome, Firefox, Opera, Safari 1*/
+            color: white !important;
+            background-color: transparent;
+        }
+
+        .search-box .search-input:-ms-input-placeholder { /* Internet Explorer */
+            color: white;
+            background-color: transparent;
+        }
+
+        .search-box .search-input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+
+        .search-toggle {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            position: absolute;
+            right: -13px;
+            top: 40px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .search-container.show .search-box {
+            width: calc(50% - 5em);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        .search-container.show {
+            display: inline-block;
+        }
+
+        #buscar .search-toggle i.fa-times {
+            display: none !important;
+        }
+
+        #buscar .search-toggle i.fa-search {
+            display: block;
+        }
+
+        #buscar .search-toggle.active i.fa-times {
+            display: block !important;
+        }
+
+        #buscar .search-toggle.active i.fa-search {
+            display: none !important;
+        }
+
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./contacto_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9D4H2RX3TB');
+    </script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body id="body" class="stretched device-xl" style="overflow-x: hidden">
+<div class="preloader text-center" style="display: none;">
+    
+</div>
+<div id="wrapper" class="clearfix">
+
+    <header id="header" class="transparent-header sticky-header">
+        <div id="header-wrap" class="">
+            <div class="container clearfix">
+                <div id="primary-menu-trigger"><i role="presentation" class="icon-reorder"></i></div>
+                <div class="top-header" style="z-index: 9999;">
+
+                </div>
+                <div id="logo" style="max-width: 250px;">
+                    <h1>
+                        <a href="planigrupo/index" class="" data-dark-logo="/static/images/logo-blanco.png"
+                            title="plani">
+                            <img src="./Plani_files/logo-plani-menu.svg" alt="Logo"
+                                style="padding-top: 10px; padding-bottom: 0; width: 210px; height: 65px"></a>
+                    </h1>
+                </div>
+                <div class="container">
+                    <nav id="primary-menu">
+
+
+                        <ul class="sf-js-enabled" style="touch-action: pan-y;">
+                            <li>
+                                <a href="./Plani.html">
+                                    <div>Inicio</div>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="./materialidad.html" class="sf-with-ul">
+                                    <div>Estrategia de Sustentabilidad</div>
+                                </a>
+                                <ul style="display: none;">
+                                    <li class="">
+                                        <a href="./materialidad.html#matriz">
+                                            <div>Matriz</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#grupos">
+                                            <div>Grupos de Interés</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#objetivos">
+                                            <div>Objetivos ODS</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#actividades">
+                                            <div>Actividades</div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./ambiental.html">
+                                    <div>Ambiental</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./responsabilidad_social.html">
+                                    <div>Social</div>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="./gobernanza.html" class="sf-with-ul">
+                                    <div>Gobernanza</div>
+                                </a>
+                                <ul style="display: none;">
+                                    <li class="">
+                                        <a href="./gobernanza.html#sistema">
+                                            <div>Sistema de Gobierno</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./gobernanza.html#comites">
+                                            <div>Comités</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./gobernanza.html#lineamientos">
+                                            <div>Lineamientos y Políticas</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./contacto.html">
+                                    <div>Contacto</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section id="page-title" class="page-title" style="background-image: url(/static/images/headers/plani-contacto.png);" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -200px;">
+    <div class="container clearfix">
+        <h1 class="text-center text-white mb-3">Contacto</h1>
+    </div>
+</section>
+
+
+
+    
+    <div class="content-wrap pb-5">
+        <article id="contactForm">
+            <fieldset class="fieldset m-auto " style="max-width: 600px">
+                <div class="">
+                    <div class="col-12">
+                        <p class="obligatorio">Si desea mayor información puede ponerse en contacto con nosotros
+                            llenando el siguiente formulario.</p>
+                    </div>
+                    <div class="col-12">
+                        <form id="contacto" role="form" class="mb-0" novalidate="novalidate">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="ShxD5kk2FcCFKd8w8QlXZQrQ45hGTpK12av9di8aN09aRGDwRBr3XjZUCiq29X7o">
+                            <div class="row clearfix">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" name="form_name" class="form-control error" value="" placeholder="*Nombre" required=""><label id="form_name-error" class="error" for="form_name" style="display: block;">This field is required.</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="form_phone" class="form-control" value="" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" name="form_email" class="form-control required email error" value="" placeholder="*Mail" required=""><label id="form_email-error" class="error" for="form_email" style="display: block;">This field is required.</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="btn w-100 mb-3 card btn btn-default font-weight-bold" style="background: white;color:#111135; cursor: pointer;" data-toggle="collapse" href="#collapseExample2" aria-expanded="false">
+                                        *Tema de interés
+                                    </div>
+                                    <div class="collapse mb-4 show" id="collapseExample2">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio" value="Modelo ASG" checked="">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white" value="Modelo ASG" disabled="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio" value="Medio Ambiente">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white" value="Medio Ambiente" disabled="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio" value="Responsabilidad Social">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white" value="Responsabilidad Social" disabled="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input name="form_theme" type="radio" value="Gobernanza">
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control bg-white" value="Gobernanza" disabled="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea name="form_message" class="form-control textarea required mb-4 error" required="" placeholder="*Comentario" rows="7"></textarea><label id="form_message-error" class="error" for="form_message" style="display: block;">This field is required.</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-group centered-movil mb-0">
+                                        <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
+
+                                    </div>
+                                    <div class="button-holder ">
+
+                                        <p class="obligatorio">Los campos marcados con asterisco (*) son
+                                            obligatorios</p>
+
+
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+
+
+                                        <input class="field" id="_Contactoportlet_WAR_contactoportlet_acceptLegalConditions" name="_Contactoportlet_WAR_contactoportlet_acceptLegalConditions" type="hidden" value="true">
+
+
+                                        <button class="btn btn-primary" type="submit" title="contactForm.button.send" id="enviar">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </fieldset>
+        </article>
+    </div>
+
+    <div class="modal fade popup" id="popup1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered justify-content-center" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h3 id="title" class="mt-1 text-center"></h3>
+                <div class="container pb-3">
+                    <h4>
+                        Tu mensaje ha sido enviado
+                    </h4>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" aria-label="Close">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer id="site-footer" class="site-footer pt-2 pb-1 position-relative rs-footer">
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-1">
+                <div class="about-widget">
+                    <h3 class="footer-title">Oficinas Corporativas</h3>
+                    <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
+                        <span class="text-center bolder">Corporativo Estado de México</span>
+                        <p class="mb-1">
+                            Av. Conscripto 360
+                            Paseo Hipódromo, PB, local SA002,
+                            Col. Lomas Hipódromo
+                            Naucalpan de Juárez 53900
+                            Estado de México.
+                        </p>
+                        <span class="text-center bolder mt-2">Corporativo Monterrey MTY</span>
+                        <p class="mb-0">
+                            Av. Eugenio Garza Sada #3431
+                            Urban Village Garza Sada, P1, local SA012,
+                            Col. Arroyo Seco CP. 64740
+                            Monterrey, Nuevo León.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cont mb-1">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="mb-1">
+
+                    <a target="_blank" class="news-note" href="https://www.planigrupo.com.mx/" style="color:#ffffff!important"><i class="fa fa-globe" aria-hidden="true"></i>
+                        www.planigrupo.com.mx</a>
+                </p>
+                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel. (55) 9177 0870</p>
+
+                <p class="mb-1">
+                    <a class="news-note" href="mailto:relacioninversionistas@planigrupo.com" style="color:#ffffff!important"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        relacioninversionistas@planigrupo.com
+                    </a></p>
+
+
+            </div>
+            <div class="col-md-4 mb-1">
+                <h3 class="footer-title">Más información</h3>
+                <div class="d-flex flex-column justify-content-around align-items-baseline">
+                    <p class="mb-1">
+                        Reciba periódicamente información ASG relacionada con nuestra compañía.
+                    </p>
+                    <form class="form mb-2 pt-2 text-center was-validated" method="post" id="newsletter-form-footer" novalidate="novalidate">
+                        <div class="form-group mb-1">
+                            <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email" type="email" placeholder="Correo electrónico" required="" data-msg-required="" data-msg-email="">
+                            <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
+                        </div>
+                        <div class="alert-message-footer"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 align-self-center">
+                <p class="copyright text-center my-0">
+                    © 2023 plani - Diseñado y generado por
+                    <a href="https://www.vertds.com/">
+                    <img class="ml-1" src="./contacto_files/vert-white.svg" width="90px" alt=""></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="gotoTop" role="presentation" class="icon-angle-up"></div>
+
+
+
+<script src="./contacto_files/jquery.js.descarga"></script>
+<script src="./contacto_files/plugins.min.js.descarga"></script>
+<script src="./contacto_files/functions.min.js.descarga"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="./contacto_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/style.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/dark.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/font-icons.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/fontello.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/animate.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/settings.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/layers.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/navigation.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/tania.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/david.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/al.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/footer.min.css">
+<link rel="stylesheet" type="text/css" href="./contacto_files/responsive.min.css">
+
+<script>var locale = 'es'</script>
+
+
+
+
+
+<script>
+    $(function () {
+        $("#subscription").click(function () {
+            if ($("#subscription_form").valid()) {
+                $('.preloader').show()
+                $.ajax({
+                    type: 'POST',
+                    url: "/es/send-subscription",
+                    dataType: 'json',
+                    data: $("#subscription_form").serialize(),
+                    complete: function (a, b) {
+                        console.log("error", a, b)
+                        $('.preloader').delay(1500).fadeOut(500);
+
+                    },
+                    success: function (response) {
+                        alert('Gracias por subscribirse' + $("#email_subscription").val());
+                        $("#email_subscription").val('');
+                        $('.preloader').fadeOut(500);
+
+                    }
+                });
+            } else {
+                alert('Por favor escriba un correo electronico valido');
+            }
+        })
+    });
+
+    $(".scroll-to-target").on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        // animate
+        $('html, body, header').animate({
+            scrollTop: $(target).offset().top - ($(window).width() > 768 ? 80 : 15)
+        }, 1000);
+    });
+
+    if ($('#newsletter-form-footer').length) {
+        var newsletter_form_footer = $('#newsletter-form-footer');
+        newsletter_form_footer.validate({
+            highlight: function (element) {
+                $(element)
+                    .addClass('is-invalid')
+                    .removeClass('is-valid')
+                    .parent()
+                    .removeClass('has-success')
+                    .addClass('has-danger');
+            },
+            success: function (label, element) {
+                $(element)
+                    .removeClass('is-invalid')
+                    .addClass('is-valid')
+                    .parent()
+                    .removeClass('has-danger')
+                    .addClass('has-success')
+                    .find('label.error')
+                    .remove();
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
+                    error.appendTo(element.parent().parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+
+        var text_success_suscrb = (locale === 'es') ? 'Correo enviado satisfactoriamente.' : 'Mail sent successfully.';
+        var text_danger_suscrb = (locale === 'es') ? 'Hubo un error al enviar su correo.' : 'There was an error sending your email.';
+
+        function button_loading(button, icon, finish) {
+            if (!finish) {
+                $(button).prepend(icon);
+                $(button).addClass('loading');
+            } else {
+                $(button + ' i').remove();
+                $(button).removeClass('loading');
+            }
+        }
+
+        function alert_animations(container, type, text) {
+            var htmlAlert = '<div class="alert alert-' + type + ' mt-2">' + text + '</div>';
+            $(container).prepend(htmlAlert);
+            $(container + " .alert").first().hide().fadeIn(800).delay(2000).fadeOut(800, function () {
+                $(this).remove();
+            });
+        }
+
+        newsletter_form_footer.submit(function (e) {
+            e.preventDefault();
+            if (newsletter_form_footer.valid()) {
+                button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>');
+                $.ajax({
+                    type: 'POST',
+                    url: '/es/send-subscription',
+                    data: newsletter_form_footer.serialize(),
+                    success: function (response) {
+                        if (response.success === 'true') {
+                            $('input').val('');
+                            $('input').removeClass('is-valid valid');
+                            setTimeout(function () {
+                                $('#newsletter-submit-footer').addClass('loading');
+                            }, 50);
+                            alert_animations('.alert-message-footer', 'success', text_success_suscrb);
+                        } else {
+                            alert_animations('.alert-message-footer', 'danger', text_danger_suscrb);
+                        }
+                        button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>', true);
+                    }
+                });
+            }
+        });
+    }
+</script>
+
+
+    <script>
+        $(function () {
+            $("#enviar").click(function (e) {
+                e.preventDefault();
+                if ($("#contacto").valid()) {
+                    $.ajax({
+                        type: 'POST',
+                        url: "/es/send-mail-contact",
+                        dataType: 'json',
+                        data: $("#contacto").serialize(),
+                        complete: function (a, b) {
+                            $('.preloader').delay(1500).fadeOut(500);
+                        },
+                        success: function (response) {
+                            $("#contacto").trigger('reset');
+                            $('.preloader').fadeOut(500);
+                            $("#popup1").modal();
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+
+
+
+</body></html>

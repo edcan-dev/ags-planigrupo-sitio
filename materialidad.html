@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://planiesg.herokuapp.com/es/materialidad -->
+<html lang="es" class="js" style="overflow-x: hidden"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Plani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://planiesg.herokuapp.com/static/images/favicon-plani.png">
+    <style>
+        .preloader,
+        .preloader2,
+        .form-process {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .preloader {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            c
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999999;
+            background-color: #ffffff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center !important;
+        }
+
+        .preloader img {
+            width: 200px;
+        }
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: var(--font-family-elementia);
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: var(--font-family-elementia);
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: var(--font-family-elementia);
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .search-container {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            box-shadow: 2em 0 0 black;
+            width: 100%;
+        }
+
+        .search-box {
+            right: 7%;
+        / / right: 0;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            padding-left: 2em;
+        / / -webkit-transform: translateX(20 %);
+        / / transform: translateX(20 %);
+            opacity: 0;
+        / / transition: all 0.4 s 0.3 s;
+            background-color: #222;
+            color: white;
+        }
+
+        .search-box .search-input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            caret-color: white;
+            color: white;
+        }
+
+        .search-box input::placeholder { /* Chrome, Firefox, Opera, Safari 1*/
+            color: white !important;
+            background-color: transparent;
+        }
+
+        .search-box .search-input:-ms-input-placeholder { /* Internet Explorer */
+            color: white;
+            background-color: transparent;
+        }
+
+        .search-box .search-input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+
+        .search-toggle {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            position: absolute;
+            right: -13px;
+            top: 40px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .search-container.show .search-box {
+            width: calc(50% - 5em);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        .search-container.show {
+            display: inline-block;
+        }
+
+        #buscar .search-toggle i.fa-times {
+            display: none !important;
+        }
+
+        #buscar .search-toggle i.fa-search {
+            display: block;
+        }
+
+        #buscar .search-toggle.active i.fa-times {
+            display: block !important;
+        }
+
+        #buscar .search-toggle.active i.fa-search {
+            display: none !important;
+        }
+
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./materialidad_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9D4H2RX3TB');
+    </script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body id="body" class="stretched device-xl" style="overflow-x: hidden">
+<div class="preloader text-center" style="display: none;">
+    
+</div>
+<div id="wrapper" class="clearfix">
+    
+    
+
+<header id="header" class="transparent-header sticky-header">
+    <div id="header-wrap" class="">
+        <div class="container clearfix">
+            <div id="primary-menu-trigger"><i role="presentation" class="icon-reorder"></i></div>
+            <div class="top-header" style="z-index: 9999;">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div id="logo" style="max-width: 250px;">
+                <h1>
+                    <a href="planigrupo/index" class="" data-dark-logo="/static/images/logo-blanco.png" title="plani">
+                        <img src="./materialidad_files/logo-plani-menu.svg" alt="Logo" style="padding-top: 10px; padding-bottom: 0; width: 210px; height: 65px"></a>
+                </h1>
+            </div>
+            <div class="container">
+                <nav id="primary-menu">
+                    
+
+
+
+<ul class="sf-js-enabled" style="touch-action: pan-y;">
+    <li>
+        <a href="./Plani.html">
+            <div>Inicio</div>
+        </a>
+    </li>
+    <li class="sub-menu">
+        <a href="./materialidad" class="sf-with-ul">
+            <div>Estrategia de Sustentabilidad</div>
+        </a>
+        <ul style="display: none;">
+            <li class="current2">
+                <a href="./materialidad.html#matriz">
+                    <div>Matriz</div>
+                </a>
+            </li>
+            <li class="current2">
+                <a href="./materialidad.html#grupos">
+                    <div>Grupos de Interés</div>
+                </a>
+            </li>
+            <li class="current2">
+                <a href="./materialidad.html#objetivos">
+                    <div>Objetivos ODS</div>
+                </a>
+            </li>
+            <li class="current2">
+                <a href="./materialidad.html#actividades">
+                    <div>Actividades</div>
+                </a>
+            </li>
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="./ambiental.html">
+            <div>Ambiental</div>
+        </a>
+    </li>
+    <li>
+        <a href="./responsabilidad_social.html">
+            <div>Social</div>
+        </a>
+    </li>
+    <li class="sub-menu">
+        <a href="./gobernanza.html" class="sf-with-ul">
+            <div>Gobernanza</div>
+        </a>
+        <ul style="display: none;">
+            <li class="">
+                <a href="./gobernanza.html#sistema">
+                    <div>Sistema de Gobierno</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./gobernanza.html#comites">
+                    <div>Comités</div>
+                </a>
+            </li>
+            <li class="">
+                <a href="./gobernanza.html#lineamientos">
+                    <div>Lineamientos y Políticas</div>
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+        <a href="./contacto.html">
+            <div>Contacto</div>
+        </a>
+    </li>
+</ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    
+    
+<section id="page-title" class="page-title" style="background-image: url(/static/images/headers/plani-materialidad.png);" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -200px;">
+    <div class="container clearfix">
+        <h1 class="text-center text-white mb-3">Estrategia de Sustentabilidad</h1>
+    </div>
+</section>
+
+
+
+    
+    <div class="content-wrap">
+        <div class="container">
+            <article id="matriz" class="pt-5">
+                <h1 class="text-center tc-blue mt-5 mb-5">Matriz ASG 2022</h1>
+                <div class="d-flex flex-column justify-content-center align-content-center">
+                    <h2 class="text-center text-blue3 text-bold">Seleccionamos 12 temas materiales
+                        potenciales en el análisis de materialidad, reflejado en la siguiente matriz:
+                    </h2>
+                    <img src="./materialidad_files/matriz_22.png" class="img-fluid" alt="">
+                </div>
+                <p class="text-justify">
+                    Como primera fase de desarrollo, hemos empezado a trabajar sobre dos de
+                    los temas materiales para reforzar nuestras prácticas existentes.
+                </p>
+
+            </article>
+
+            <!--  <article id="estrategia" class="pt-5">
+                   <h1 class="text-center tc-blue mt-5 mb-5">
+                       Estrategia
+                   </h1>
+                   <p class="text-justify">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur cum esse illum
+                       incidunt inventore minus mollitia praesentium quas quasi, quia temporibus unde veniam, voluptatem.
+                   </p>
+
+               </article>-->
+            <article id="grupos" class="pt-5">
+                <h1 class="text-center tc-blue mt-5 mb-5">Grupos de Interés</h1>
+                <p class="text-justify">En Planigrupo entendemos la relevancia de procurar la vinculación con
+                    nuestros grupos de interés, ya que la consideramos como centro de negocio y aspecto fundamental
+                    de la sustentabilidad;
+                    hemos adoptado los valores del “International Integrated Reporting Framework”, en donde se
+                    establece que la publicación de los resultados de sustentabilidad deben proveer un panorama sobre
+                    la naturaleza y la calidad de las relaciones entre los grupos de interés y la compañía, por tal
+                    motivo es esencial vincularnos con ellos para entender sus expectativas, necesidades y
+                    preocupaciones logrando proponer soluciones concretas con ellos, a fin de prevenir riesgos y
+                    desarrollar oportunidades. </p>
+                <p class="text-justify">Con este fin, hemos desarrollado diversas herramientas de comunicación para
+                    establecer puntos de
+                    contacto directo con ellos e identificar los temas y canales de diálogo que les sean relevantes;
+                    de esta manera aspiramos a mejorar nuestra relación con ellos, así como nuestros procesos y
+                    servicios.</p>
+                <p class="text-justify">Nuestro Proceso de vinculación con los grupos de interés incluye tres
+                    fases:</p>
+
+                <div style="text-align:center;">
+                    <img src="./materialidad_files/proceso_vinculacion.png" class="img-fluid" alt="">
+                </div>
+
+                <p>A continuación, se comparte el listado de nuestros grupos de interés, el canal de comunicación
+                    que empleamos con cada uno de ellos, así como la frecuencia de ésta y algunos de los temas
+                    claves que se hablan:</p>
+
+                <div class="text-center">
+                    <img src="./materialidad_files/grupos_interes_1.png" alt="">
+                </div>
+
+                <br><br>
+                <p>A partir del análisis de materialidad se pudieron identificar los temas ASG que fueron relevantes
+                    para cada uno de nuestros grupos de interés, posteriormente se realizó un plan de acción para
+                    cada tema material. Todos estos resultados fueron compartidos con nuestro Consejo de
+                    Administración y Comité Técnico, quienes son responsables de supervisar la respuesta de la
+                    organización a cualquier preocupación crítica. </p>
+                <p>A continuación, se presentan la relevancia de algunos de los temas y preocupaciones de cada uno
+                    de nuestros grupos de interés (1 más relevante, 4 medianamente relevante)</p>
+
+                <div style="text-align:center;">
+                    <img src="./materialidad_files/temas_relevancia2.png" style="display:block; width:100%; height: 100%;" alt="">
+                </div>
+                <h1 class="text-center tc-blue mt-5 mb-5">Encuesta por grupos de interés</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="directores" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: 0px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 6.00% 6 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,151.80185397617987,71.92550516325218 L149.22498210738712,78.43394056446995 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 94.00% 94 "><path cs="1000,1000" d=" M149.22498210738712,78.43394056446995 L151.80185397617987,71.92550516325218 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,149.22498210738712,78.43394056446995 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">8%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Directores</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="inquilinos" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: -0.25px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 8.00% 8 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,157.14242268278062,74.43858603793842 L153.7701469640686,80.57273279824545 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 92.00% 92 "><path cs="1000,1000" d=" M153.7701469640686,80.57273279824545 L157.14242268278062,74.43858603793842 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,153.7701469640686,80.57273279824545 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">8%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Inquilinos</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="inversionistas" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: -0.5px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 7.00% 7 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,154.51162670355842,73.09812853409707 L151.5311716626029,79.43191790135921 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 93.00% 93 "><path cs="1000,1000" d=" M151.5311716626029,79.43191790135921 L154.51162670355842,73.09812853409707 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,151.5311716626029,79.43191790135921 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">7%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Inversionistas</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="proveedores" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: 0.25px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 24.00% 24 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,181.40725623612877,112.67384558212227 L174.42106913713087,113.11337921882746 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 76.00% 76 "><path cs="1000,1000" d=" M174.42106913713087,113.11337921882746 L181.40725623612877,112.67384558212227 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,174.42106913713087,113.11337921882746 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">24%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Proveedores</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="bancos" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: 0px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 13.00% 13 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,168.76152548880634,83.45128602135162 L163.65874509685645,88.24311576285245 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 87.00% 87 "><path cs="1000,1000" d=" M163.65874509685645,88.24311576285245 L168.76152548880634,83.45128602135162 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,163.65874509685645,88.24311576285245 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">13%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Bancos</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="colaboradores" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: -0.25px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 26.00% 26 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,181.40725623612877,118.57615441787772 L174.42106913713087,118.13662078117252 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 74.00% 74 "><path cs="1000,1000" d=" M174.42106913713087,118.13662078117252 L181.40725623612877,118.57615441787772 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,174.42106913713087,118.13662078117252 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">26%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Colaboradores</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="consejo" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: -0.5px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 9.00% 9 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,159.68385936401285,75.9415875014053 L155.93307179915988,81.8518829799194 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 91.00% 91 "><path cs="1000,1000" d=" M155.93307179915988,81.8518829799194 L159.68385936401285,75.9415875014053 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,155.93307179915988,81.8518829799194 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">9%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Consejo</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="otros" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 269px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 269px; height: 200px; top: -0.175781px; left: 0.25px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L268.5,0.5 L268.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 7.00% 7 "><path cs="1000,1000" d=" M134.5,75.625 L134.5,68.625 A47,47,0,0,1,154.51162670355842,73.09812853409707 L151.5311716626029,79.43191790135921 A40,40,0,0,0,134.5,75.625 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 93.00% 93 "><path cs="1000,1000" d=" M151.5311716626029,79.43191790135921 L154.51162670355842,73.09812853409707 A47,47,0,1,1,134.5,68.625 L134.5,75.625 A40,40,0,1,0,151.5311716626029,79.43191790135921 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="13" fill="#555" font-family="Verdana" font-size="25px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,117)" style="pointer-events: none;"><tspan y="13" x="0">7%</tspan></text></g><text y="7" fill="#000000" font-family="Verdana" font-size="14px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(135,20)" style="pointer-events: none;"><tspan y="7" x="0">Otros</tspan></text></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                </div>
+
+                <h1 class="text-center tc-blue mt-5 mb-5">Internos vs Externos</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="interno" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 568px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 568px; height: 200px; top: -0.199219px; left: 0px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L567.5,0.5 L567.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 40.00% 40 "><path cs="1000,1000" d=" M284,50 L284,37 A63,63,0,0,1,321.03047089442583,150.96807064562168 L313.38926261462365,140.45084971874735 A50,50,0,0,0,284,50 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 60.00% 60 "><path cs="1000,1000" d=" M313.38926261462365,140.45084971874735 L321.03047089442583,150.96807064562168 A63,63,0,1,1,284,37 L284,50 A50,50,0,1,0,313.38926261462365,140.45084971874735 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="10" fill="#555" font-family="Verdana" font-size="20px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(284,108)" style="pointer-events: none;"><tspan y="10" x="0">Interno</tspan></text><text y="8" fill="#555" font-family="Verdana" font-size="15px" opacity="1" text-anchor="middle" transform="translate(284,94)" style="pointer-events: none;"><tspan y="8" x="0">40%</tspan></text></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="externo" style="height: 200px; overflow: hidden; text-align: left;"><div class="amcharts-main-div" style="position: relative;"><div class="amcharts-chart-div" style="overflow: hidden; position: relative; text-align: left; width: 568px; height: 200px; padding: 0px; touch-action: auto;"><svg version="1.1" style="position: absolute; width: 568px; height: 200px; top: -0.199219px; left: -0.5px;"><desc>JavaScript chart by amCharts 3.21.15</desc><g><path cs="100,100" d="M0.5,0.5 L567.5,0.5 L567.5,199.5 L0.5,199.5 Z" fill="#FFFFFF" stroke="#000000" fill-opacity="0" stroke-width="1" stroke-opacity="0"></path></g><g></g><g></g><g></g><g></g><g></g><g><g aria-label=": 40.00% 40 "><path cs="1000,1000" d=" M254.61073738537635,140.45084971874738 L246.9695291055742,150.9680706456217 A63,63,0,0,1,284,37 L284,50 A50,50,0,0,0,254.61073738537635,140.45084971874738 Z" fill="#939598" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g><g aria-label=": 60.00% 60 "><path cs="1000,1000" d=" M284,50 L284,37 A63,63,0,1,1,246.9695291055742,150.9680706456217 L254.61073738537635,140.45084971874738 A50,50,0,1,0,284,50 Z" fill="#DC291E" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0" fill-opacity="1"></path></g></g><g></g><g></g><g></g><g></g><g></g><g><g><text y="10" fill="#555" font-family="Verdana" font-size="20px" opacity="1" font-weight="bold" text-anchor="middle" transform="translate(284,108)" style="pointer-events: none;"><tspan y="10" x="0">Externo</tspan></text><text y="8" fill="#555" font-family="Verdana" font-size="15px" opacity="1" text-anchor="middle" transform="translate(284,94)" style="pointer-events: none;"><tspan y="8" x="0">60%</tspan></text></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg><a href="http://www.amcharts.com/" title="JavaScript charts" target="_self" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; top: 5px;"></a></div></div></div>
+                    </div>
+                </div>
+            </article>
+            <article id="objetivos" class="pt-5">
+                <h1 class="text-center tc-blue mt-5 mb-5">
+                    Objetivos ODS 2023
+                </h1>
+                <p class="text-justify">
+                    En Planigrupo estamos comprometidos con el desarrollo sostenible de las
+                    comunidades, empresas y países en los que operamos, y para ello nos hemos enfocado en los
+                    Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas.
+                </p>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="row d-flex justify-content-center align-items-center center">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_1.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify">
+                                    Planigrupo aporta en este objetivo mediante la creación de oportunidades laborales,
+                                    proporcionando
+                                    condiciones de trabajo dignas a empleados y proveedores e impactando positivamente
+                                    en las
+                                    comunidades locales.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify">
+                                    En la empresa hemos adoptado políticas y procedimientos para garantizar los mismos
+                                    derechos
+                                    y oportunidades laborales
+                                    para las mujeres, fomentando así el crecimiento económico y el desarrollo social.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_5.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_8.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify">
+                                    Planigrupo aporta a la creación de puestos de trabajo decentes en las comunidades en
+                                    las que
+                                    operamos. Todas las mujeres
+                                    y hombres, incluidos los jóvenes y las personas con discapacidad, cuentan con
+                                    condiciones
+                                    laborales atractivas, y cada
+                                    vez nos acercamos más a la igualdad de remuneración por trabajo de igual valor.
+                                    Dentro de
+                                    esto, protegemos los derechos
+                                    laborales y promovemos un entorno de trabajo seguro y sin riesgos para todos los
+                                    trabajadores de Planigrupo.
+                                </p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify">
+                                    Proporcionamos condiciones laborales dignas a través de toda nuestra cadena de
+                                    valor,
+                                    especialmente para grupos desfavorecidos,
+                                    redistribuyendo de forma más igualitaria los salarios a los colaboradores,
+                                    implantando
+                                    mecanismos para evitar la evasión fiscal y
+                                    fomentando proyectos de cooperación al desarrollo.
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_10.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_11.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify"><br><br>
+                                    En Planigrupo fomentamos las infraestructuras y procesos sostenibles; preservando el
+                                    patrimonio cultural y natural;
+                                    impactando positivamente en las ciudades y asentamientos humanos en los que opera e
+                                    invirtiendo en la protección de
+                                    las personas potencialmente afectadas por desastres naturales.
+                                </p>
+
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify"><br><br>
+                                    En Planigrupo incorpamos el respeto a los derechos humanos y procesos de
+                                    transparencia en la
+                                    organización, evitando
+                                    cualquier forma de violencia con los grupos vulnerables. Contamos con nuestro código
+                                    de
+                                    ética, promovemos acciones en materia
+                                    de transparencia y anticorrupción.
+                                </p>
+
+
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_16.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <img class="img-fluid" src="./materialidad_files/ODS_17.png" width="200px" height="600px" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="text-justify"><br><br>
+                                    En Planigrupo somos partícipes de la promoción de las inversiones en favor de
+                                    México, por lo
+                                    cual trabajamos
+                                    con inquilinos de talla nacional e internacional. Promovemos el trabajo entre el
+                                    sector
+                                    público y privado, así
+                                    como la cooperación con la sociedad civil, aprovechando la experiencia y las
+                                    estrategias de
+                                    obtención de recursos
+                                    de las alianzas para impulsar el desarrollo económico local.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="actividades" class="pt-5">
+                
+
+
+    <link rel="stylesheet" href="./materialidad_files/carousel.eventos.min.css">
+    <style>
+
+    </style>
+
+<section id="eventos" class="s-block pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center tc-blue mt-5 mb-0">Actividades</h1>
+                <div class="d-flex justify-content-end align-items-center mb-5">
+                    <div class="form-inline">
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">Filtrar por:</h3>
+                        <select class="form-control form-control-sm mr-3" name="select_category" id="select_category">
+                            <option value="all">Todas</option>
+                            <option value="Sociales">Sociales</option>
+                            <option value="Ambientales">Ambientales</option>
+                            <option value="Corporativas">Corporativas</option>
+                        </select>
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">Año</h3>
+                        <select class="form-control form-control-sm" name="select_anno" id="select_anno">
+                            <option value="all">Todo</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="events-list my-3 mx-3">
+                    <div class="row">
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-06-17" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Reciclar-para-ganar-abril-2022.png" data-title="Máquinas de Reciclaje-AIEn" data-url="" data-category="Ambientales" data-description="De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2" data-carousel="[&#39;images/eventos_soc/Reciclar-para-ganar-abril-2022-1.png&#39;, &#39;images/eventos_soc/Reciclar-para-ganar-abril-2022-2.png&#39;]" data-date="2022-06-17">
+                                        <img src="./materialidad_files/Reciclar-para-ganar-abril-2022.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Máquinas de Reciclaje-AIEn
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Máquinas de Reciclaje-AIEn
+                                                </h4>
+                                                <p class="text-white description">De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-06-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png" data-title="Reconocimiento a CiudadelaUV por el banco de tapitas " data-url="" data-category="Ambientales" data-description="Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico." data-carousel="[]" data-date="2022-06-01">
+                                        <img src="./materialidad_files/Banco-tapitas-Junio-Ciudadela.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reconocimiento a CiudadelaUV por el banco de tapitas 
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reconocimiento a CiudadelaUV por el banco de tapitas 
+                                                </h4>
+                                                <p class="text-white description">Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-08-19" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Reciclar-2022-324-botellas.png" data-title="Reciclar para ganar. Alianza con grupo AIEn" data-url="" data-category="Ambientales" data-description="En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2" data-carousel="[]" data-date="2022-08-19">
+                                        <img src="./materialidad_files/Reciclar-2022-324-botellas.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclar para ganar. Alianza con grupo AIEn
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclar para ganar. Alianza con grupo AIEn
+                                                </h4>
+                                                <p class="text-white description">En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2021-03-04" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/alianza_grupo_alen.png" data-title="Alianza Grupo Alen" data-url="https://www.youtube.com/embed/bGWF2LyXcXQ" data-category="Ambientales" data-description="Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo" data-carousel="[]" data-date="2021-03-04">
+                                        <img src="./materialidad_files/alianza_grupo_alen.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Alianza Grupo Alen
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Alianza Grupo Alen
+                                                </h4>
+                                                <p class="text-white description">Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuos_lr.jpg" data-title="Separación de residuos" data-url="" data-category="Ambientales" data-description="Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje." data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./materialidad_files/separacion_residuos_lr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de residuos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de residuos
+                                                </h4>
+                                                <p class="text-white description">Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2019-10-02" data-category="Sociales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/domo_tragaluceslr.jpg" data-title="Colocación de domos y tragaluces" data-url="" data-category="Sociales" data-description="Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar." data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./materialidad_files/domo_tragaluceslr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Colocación de domos y tragaluces
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Colocación de domos y tragaluces
+                                                </h4>
+                                                <p class="text-white description">Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2022-03-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos/Helice.png" data-title="Donación de Materiales a Fundación Hélice" data-url="" data-category="Ambientales" data-description="Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales" data-carousel="[]" data-date="2022-03-01">
+                                        <img src="./materialidad_files/Helice.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Donación de Materiales a Fundación Hélice
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Donación de Materiales a Fundación Hélice
+                                                </h4>
+                                                <p class="text-white description">Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuos_lr.jpg" data-title="Separación de residuos y reciclaje" data-url="" data-category="Ambientales" data-description="Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019" data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./materialidad_files/separacion_residuos_lr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de residuos y reciclaje
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de residuos y reciclaje
+                                                </h4>
+                                                <p class="text-white description">Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias" data-carousel="[&#39;images/eventos_soc/cambio_luminarias_mdv1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv2.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv3.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv4.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv5.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv6.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv7.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv8.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv9.png&#39;]" data-date="2019-10-02">
+                                        <img src="./materialidad_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_equipos_ahorradores.png" data-title="Instalación de equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron equipos ahorradores de agua en lavamanos y sanitarios." data-carousel="[&#39;images/eventos_soc/instalacion_equipos_ahorradores1.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores2.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores3.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores4.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores5.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores6.jpg&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/instalacion_equipos_ahorradores.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron equipos ahorradores de agua en lavamanos y sanitarios.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Instalación de mingitorios secos y equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico" data-carousel="[&#39;images/eventos_soc/instalacion_mingitorios_pua11.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua22.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua33.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/proteccion_naturaleza.png" data-title="Protección de la naturaleza" data-url="" data-category="Ambientales" data-description="Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/proteccion_naturaleza.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Protección de la naturaleza
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Protección de la naturaleza
+                                                </h4>
+                                                <p class="text-white description">Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_migitorios_o.png" data-title="Cambio de mingitorios" data-url="" data-category="Ambientales" data-description="Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/cambio_migitorios_o.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de mingitorios
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de mingitorios
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_sensores_lus.png" data-title="Instalación de sensores de luz" data-url="" data-category="Ambientales" data-description="Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/instalacion_sensores_lus.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de sensores de luz
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de sensores de luz
+                                                </h4>
+                                                <p class="text-white description">Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_o.png" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED." data-carousel="[&#39;images/eventos_soc/cambio_luminarias_o1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_o2.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/cambio_luminarias_o.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/reciclaje_recoleccion.png" data-title="Reciclaje y recolección" data-url="" data-category="Ambientales" data-description="Se realizan recolecciones mensuales de cartón y reciclaje." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/reciclaje_recoleccion.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclaje y recolección
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclaje y recolección
+                                                </h4>
+                                                <p class="text-white description">Se realizan recolecciones mensuales de cartón y reciclaje.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminaria.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_luminaria1.png&#39;, &#39;images/eventos_soc/cambio_luminaria2.png&#39;, &#39;images/eventos_soc/cambio_luminaria3.png&#39;, &#39;images/eventos_soc/cambio_luminaria4.png&#39;, &#39;images/eventos_soc/cambio_luminaria5.png&#39;, &#39;images/eventos_soc/cambio_luminaria6.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/cambio_luminaria.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuo_pa.jpg" data-title="Reciclaje y separación de residuos" data-url="" data-category="Ambientales" data-description="Se implementa la recolección de residuos y reciclaje desde el 2015." data-carousel="[&#39;images/eventos_soc/separacion_residuo_pa1.png&#39;, &#39;images/eventos_soc/separacion_residuo_pa2.png&#39;, &#39;images/eventos_soc/separacion_residuo_pa3.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/separacion_residuo_pa.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclaje y separación de residuos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclaje y separación de residuos
+                                                </h4>
+                                                <p class="text-white description">Se implementa la recolección de residuos y reciclaje desde el 2015.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Cambio de sanitarios" data-url="" data-category="Ambientales" data-description="Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019." data-carousel="[&#39;images/eventos_soc/instalacion_mingitorios_pua1.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua2.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de sanitarios
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de sanitarios
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se colocaron luminarias ahorrativas para el cuidado del medio ambiente" data-carousel="[&#39;images/eventos_soc/cambio_luminarias_mdv1.1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv2.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv3.1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv4.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv5.1.jpg&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se colocaron luminarias ahorrativas para el cuidado del medio ambiente</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_basura_carton.png" data-title="Separación de basura y ley que prohibe uso de popotes y bolsas de plástico" data-url="" data-category="Ambientales" data-description="Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/separacion_basura_carton.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                                </h4>
+                                                <p class="text-white description">Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Instalación de mingitorios secos y equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron mingitorios secos para el ahorro de agua" data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron mingitorios secos para el ahorro de agua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-30" data-category="Sociales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_jardines_camellos.png" data-title="Cambio de jardinería y programas de adopción de camellones" data-url="" data-category="Sociales" data-description="Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua." data-carousel="[]" data-date="2019-09-30">
+                                        <img src="./materialidad_files/cambio_jardines_camellos.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de jardinería y programas de adopción de camellones
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de jardinería y programas de adopción de camellones
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-12" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/recoleccion_electrodomesticos_cgp.png" data-title="Recolección de Electrodomésticos" data-url="" data-category="Ambientales" data-description="Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos" data-carousel="[]" data-date="2019-09-12">
+                                        <img src="./materialidad_files/recoleccion_electrodomesticos_cgp.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Recolección de Electrodomésticos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Recolección de Electrodomésticos
+                                                </h4>
+                                                <p class="text-white description">Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/inst_lumi.png" data-title="Instalación de luminaria ahorrativa y colocación de solatubes" data-url="" data-category="Ambientales" data-description="Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/inst_lumi.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de luminaria ahorrativa y colocación de solatubes
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de luminaria ahorrativa y colocación de solatubes
+                                                </h4>
+                                                <p class="text-white description">Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/equipos_aire.png" data-title="Equipos de aire acondicionado" data-url="" data-category="Ambientales" data-description="Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente." data-carousel="[&#39;images/eventos_soc/equipos_aire1.jpg&#39;, &#39;images/eventos_soc/equipos_aire2.jpg&#39;, &#39;images/eventos_soc/equipos_aire3.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/equipos_aire.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Equipos de aire acondicionado
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Equipos de aire acondicionado
+                                                </h4>
+                                                <p class="text-white description">Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_basura_carton.png" data-title="Separación de basura y ley que prohibe uso de popotes y bolsas de plástico" data-url="" data-category="Ambientales" data-description="Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019." data-carousel="[&#39;images/eventos_soc/separacion_basura_carton1.jpg&#39;, &#39;images/eventos_soc/separacion_basura_carton2.png&#39;, &#39;images/eventos_soc/separacion_basura_carton3.png&#39;]" data-date="2019-10-01">
+                                        <img src="./materialidad_files/separacion_basura_carton.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                                </h4>
+                                                <p class="text-white description">Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_bac.png" data-title="Separación de basura y cartón" data-url="" data-category="Ambientales" data-description="Se colocaron cestos de basura para su separación (orgánica e inorgánica)." data-carousel="[&#39;images/eventos_soc/separacion_bac1.jpg&#39;, &#39;images/eventos_soc/separacion_bac2.jpg&#39;, &#39;images/eventos_soc/separacion_bac3.jpg&#39;, &#39;images/eventos_soc/separacion_bac4.jpg&#39;, &#39;images/eventos_soc/separacion_bac5.jpg&#39;, &#39;images/eventos_soc/separacion_bac6.jpg&#39;, &#39;images/eventos_soc/separacion_bac7.jpg&#39;, &#39;images/eventos_soc/separacion_bac8.jpg&#39;, &#39;images/eventos_soc/separacion_bac9.png&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/separacion_bac.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y cartón
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y cartón
+                                                </h4>
+                                                <p class="text-white description">Se colocaron cestos de basura para su separación (orgánica e inorgánica).</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminaria_led_plazamonumento.png" data-title="Cambio de luminaria a LED" data-url="" data-category="Ambientales" data-description="Se realizó el cambio de luminaria a tecnología LED, dentro y fuera de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_luminaria_led_plazamonumento1.png&#39;, &#39;images/eventos_soc/cambio_luminaria_led_plazamonumento2.png&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio_luminaria_led_plazamonumento.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminaria a LED
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminaria a LED
+                                                </h4>
+                                                <p class="text-white description">Se realizó el cambio de luminaria a tecnología LED, dentro y fuera de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_led_pbm.png" data-title="Cambio a lámparas LED y Programa de recolección de cartón" data-url="" data-category="Ambientales" data-description="Se cambiaron lámparas en interior y exterior para el ahorro de energía." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio_led_pbm.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio a lámparas LED y Programa de recolección de cartón
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio a lámparas LED y Programa de recolección de cartón
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron lámparas en interior y exterior para el ahorro de energía.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/centro_a.png" data-title="Centro de acopio de reciclado electrónico" data-url="" data-category="Ambientales" data-description="Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/centro_a.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Centro de acopio de reciclado electrónico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Centro de acopio de reciclado electrónico
+                                                </h4>
+                                                <p class="text-white description">Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_l.jpg" data-title="Cambio de luminarias y programa de reciclaje" data-url="" data-category="Ambientales" data-description="En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_l1.jpg&#39;, &#39;images/eventos_soc/cambio_l2.jpg&#39;, &#39;images/eventos_soc/cambio_l3.jpg&#39;, &#39;images/eventos_soc/cambio_l4.jpg&#39;, &#39;images/eventos_soc/cambio_l5.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio_l.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias y programa de reciclaje
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias y programa de reciclaje
+                                                </h4>
+                                                <p class="text-white description">En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_j.jpg" data-title="Cambio de jardinería y programa adopción de camellones" data-url="" data-category="Ambientales" data-description="Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua." data-carousel="[&#39;images/eventos_soc/cambio_j1.jpg&#39;, &#39;images/eventos_soc/cambio_j2.jpg&#39;, &#39;images/eventos_soc/cambio_j3.jpg&#39;, &#39;images/eventos_soc/cambio_j4.jpg&#39;, &#39;images/eventos_soc/cambio_j5.jpg&#39;, &#39;images/eventos_soc/cambio_j6.jpg&#39;, &#39;images/eventos_soc/cambio_j7.jpg&#39;, &#39;images/eventos_soc/cambio_j8.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio_j.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de jardinería y programa adopción de camellones
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de jardinería y programa adopción de camellones
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias y proyecto solatubes" data-url="" data-category="Ambientales" data-description="Se realizó el cambio de luminarias en interiores y exteriores a tecnología LED. Se cambiaron un total de 183 luminarias." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias y proyecto solatubes
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias y proyecto solatubes
+                                                </h4>
+                                                <p class="text-white description">Se realizó el cambio de luminarias en interiores y exteriores a tecnología LED. Se cambiaron un total de 183 luminarias.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio.jpg" data-title="Cambio de luminaras a tecnologia LED" data-url="" data-category="Ambientales" data-description="Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional." data-carousel="[&#39;images/eventos_soc/cambio1.jpg&#39;, &#39;images/eventos_soc/cambio2.jpg&#39;, &#39;images/eventos_soc/cambio3.jpg&#39;, &#39;images/eventos_soc/cambio4.jpg&#39;, &#39;images/eventos_soc/cambio5.png&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/cambio.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminaras a tecnologia LED
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminaras a tecnologia LED
+                                                </h4>
+                                                <p class="text-white description">Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-12" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/recoleccion_electrodomesticos_cgp.png" data-title="Recolección de Electrodomésticos" data-url="" data-category="Ambientales" data-description="Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial." data-carousel="[]" data-date="2019-09-12">
+                                        <img src="./materialidad_files/recoleccion_electrodomesticos_cgp.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Recolección de Electrodomésticos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Recolección de Electrodomésticos
+                                                </h4>
+                                                <p class="text-white description">Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="https://planiesg.herokuapp.com/es/materialidad#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_sol.png" data-title="Instalación de solatubes y mingitorios de gravedad" data-url="" data-category="Ambientales" data-description="Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica." data-carousel="[&#39;images/eventos_soc/instalacion_sol1.png&#39;, &#39;images/eventos_soc/instalacion_sol2.png&#39;]" data-date="2021-10-02">
+                                        <img src="./materialidad_files/instalacion_sol.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de solatubes y mingitorios de gravedad
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de solatubes y mingitorios de gravedad
+                                                </h4>
+                                                <p class="text-white description">Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+                        <article id="no-event" class="col-md-3 event-item hide-event">
+                            <h3 class="mb-0 uppercase">
+                                No hay noticias.
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+                <div id="paginationholder" class="mb-3 mb-lg-0 d-flex justify-content-end"><ul id="pagination" class="pagination"><li class="page-item prev disabled"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link"><i class="icon-arrow-left"></i></a></li><li class="page-item active"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link">1</a></li><li class="page-item"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link">2</a></li><li class="page-item"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link">3</a></li><li class="page-item"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link">4</a></li><li class="page-item"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link">5</a></li><li class="page-item next"><a href="https://planiesg.herokuapp.com/es/materialidad#" class="page-link"><i class="icon-arrow-right"></i></a></li></ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade popup" id="GalleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-body">
+                    <img class="cover event-img" src="https://planiesg.herokuapp.com/es/materialidad">
+                    <iframe class="event-url" width="100%" height="auto" src="./materialidad_files/saved_resource.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="min-height: 400px">
+
+                    </iframe>
+                    <!--carousel-->
+                    <div id="carousel-eventos" class="row">
+                        <div class="col-12 mb-5">
+                            <div id="carousel-eventos-tree" class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget owl-loaded owl-drag" data-margin="" data-loop="true" data-nav="true" data-autoplay="5000" data-items="1" data-pagi="true" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="1" data-items-xl="1" data-auto-height="true">
+                            <div class="owl-stage-outer owl-height"><div class="owl-stage"></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i role="presentation" class="icon-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i role="presentation" class="icon-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
+                        </div>
+                    </div>
+                    <h4 class="event-title card-title mb-0">
+                    </h4>
+                    <i class="fa fa-calendar"></i>
+                    <span class="event-date">
+                    </span>
+                    <i class="fa fa-folder"></i>
+
+                    <span class="event-category">
+                    </span>
+                    <p class="event-description card-text mt-5">
+                    </p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <button type="button" class="btn btn-danger close-btn card-link" data-mdb-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </article>
+
+            <!--<a class="btn bg-danger text-white" href="/es/">
+                volver
+            </a> -->
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer id="site-footer" class="site-footer pt-2 pb-1 position-relative rs-footer">
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-1">
+                <div class="about-widget">
+                    <h3 class="footer-title">Oficinas Corporativas</h3>
+                    <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
+                        <span class="text-center bolder">Corporativo Estado de México</span>
+                        <p class="mb-1">
+                            Av. Conscripto 360
+                            Paseo Hipódromo, PB, local SA002,
+                            Col. Lomas Hipódromo
+                            Naucalpan de Juárez 53900
+                            Estado de México.
+                        </p>
+                        <span class="text-center bolder mt-2">Corporativo Monterrey MTY</span>
+                        <p class="mb-0">
+                            Av. Eugenio Garza Sada #3431
+                            Urban Village Garza Sada, P1, local SA012,
+                            Col. Arroyo Seco CP. 64740
+                            Monterrey, Nuevo León.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cont mb-1">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="mb-1">
+
+                    <a target="_blank" class="news-note" href="https://www.planigrupo.com.mx/" style="color:#ffffff!important"><i class="fa fa-globe" aria-hidden="true"></i>
+                        www.planigrupo.com.mx</a>
+                </p>
+                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel. (55) 9177 0870</p>
+
+                <p class="mb-1">
+                    <a class="news-note" href="mailto:relacioninversionistas@planigrupo.com" style="color:#ffffff!important"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        relacioninversionistas@planigrupo.com
+                    </a></p>
+
+
+            </div>
+            <div class="col-md-4 mb-1">
+                <h3 class="footer-title">Más información</h3>
+                <div class="d-flex flex-column justify-content-around align-items-baseline">
+                    <p class="mb-1">
+                        Reciba periódicamente información ASG relacionada con nuestra compañía.
+                    </p>
+                    <form class="form mb-2 pt-2 text-center was-validated" method="post" id="newsletter-form-footer" novalidate="novalidate">
+                        <div class="form-group mb-1">
+                            <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email" type="email" placeholder="Correo electrónico" required="" data-msg-required="" data-msg-email="">
+                            <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
+                        </div>
+                        <div class="alert-message-footer"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 align-self-center">
+                <p class="copyright text-center my-0">
+                    © 2023 plani - Diseñado y generado por
+                    <a href="https://www.vertds.com/">
+                    <img class="ml-1" src="./materialidad_files/vert-white.svg" width="90px" alt=""></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="gotoTop" role="presentation" class="icon-angle-up"></div>
+
+
+
+<script src="./materialidad_files/jquery.js.descarga"></script>
+<script src="./materialidad_files/plugins.min.js.descarga"></script>
+<script src="./materialidad_files/functions.min.js.descarga"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="./materialidad_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/style.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/dark.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/font-icons.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/fontello.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/animate.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/settings.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/layers.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/navigation.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/tania.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/david.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/al.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/footer.min.css">
+<link rel="stylesheet" type="text/css" href="./materialidad_files/responsive.min.css">
+
+<script>var locale = 'es'</script>
+
+
+
+
+
+<script>
+    $(function () {
+        $("#subscription").click(function () {
+            if ($("#subscription_form").valid()) {
+                $('.preloader').show()
+                $.ajax({
+                    type: 'POST',
+                    url: "/es/send-subscription",
+                    dataType: 'json',
+                    data: $("#subscription_form").serialize(),
+                    complete: function (a, b) {
+                        console.log("error", a, b)
+                        $('.preloader').delay(1500).fadeOut(500);
+
+                    },
+                    success: function (response) {
+                        alert('Gracias por subscribirse' + $("#email_subscription").val());
+                        $("#email_subscription").val('');
+                        $('.preloader').fadeOut(500);
+
+                    }
+                });
+            } else {
+                alert('Por favor escriba un correo electronico valido');
+            }
+        })
+    });
+
+    $(".scroll-to-target").on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        // animate
+        $('html, body, header').animate({
+            scrollTop: $(target).offset().top - ($(window).width() > 768 ? 80 : 15)
+        }, 1000);
+    });
+
+    if ($('#newsletter-form-footer').length) {
+        var newsletter_form_footer = $('#newsletter-form-footer');
+        newsletter_form_footer.validate({
+            highlight: function (element) {
+                $(element)
+                    .addClass('is-invalid')
+                    .removeClass('is-valid')
+                    .parent()
+                    .removeClass('has-success')
+                    .addClass('has-danger');
+            },
+            success: function (label, element) {
+                $(element)
+                    .removeClass('is-invalid')
+                    .addClass('is-valid')
+                    .parent()
+                    .removeClass('has-danger')
+                    .addClass('has-success')
+                    .find('label.error')
+                    .remove();
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
+                    error.appendTo(element.parent().parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+
+        var text_success_suscrb = (locale === 'es') ? 'Correo enviado satisfactoriamente.' : 'Mail sent successfully.';
+        var text_danger_suscrb = (locale === 'es') ? 'Hubo un error al enviar su correo.' : 'There was an error sending your email.';
+
+        function button_loading(button, icon, finish) {
+            if (!finish) {
+                $(button).prepend(icon);
+                $(button).addClass('loading');
+            } else {
+                $(button + ' i').remove();
+                $(button).removeClass('loading');
+            }
+        }
+
+        function alert_animations(container, type, text) {
+            var htmlAlert = '<div class="alert alert-' + type + ' mt-2">' + text + '</div>';
+            $(container).prepend(htmlAlert);
+            $(container + " .alert").first().hide().fadeIn(800).delay(2000).fadeOut(800, function () {
+                $(this).remove();
+            });
+        }
+
+        newsletter_form_footer.submit(function (e) {
+            e.preventDefault();
+            if (newsletter_form_footer.valid()) {
+                button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>');
+                $.ajax({
+                    type: 'POST',
+                    url: '/es/send-subscription',
+                    data: newsletter_form_footer.serialize(),
+                    success: function (response) {
+                        if (response.success === 'true') {
+                            $('input').val('');
+                            $('input').removeClass('is-valid valid');
+                            setTimeout(function () {
+                                $('#newsletter-submit-footer').addClass('loading');
+                            }, 50);
+                            alert_animations('.alert-message-footer', 'success', text_success_suscrb);
+                        } else {
+                            alert_animations('.alert-message-footer', 'danger', text_danger_suscrb);
+                        }
+                        button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>', true);
+                    }
+                });
+            }
+        });
+    }
+</script>
+
+
+    <script src="./materialidad_files/amcharts-2.js.descarga"></script>
+    <script src="./materialidad_files/pie-2.js.descarga"></script>
+    <script src="./materialidad_files/animate.js.descarga"></script>
+    <script src="./materialidad_files/jquery.twbsPagination.min.js.descarga"></script>
+    <script src="./materialidad_files/carousel.eventos.js.descarga"></script>
+
+    <script>
+        var directores = AmCharts.makeChart("directores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [
+                {"sector": "", "size": 6},
+                {"sector": "", "size": 94}
+            ],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Directores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "8%",
+                "color": "#555"
+            }],
+        });
+        var inquilinos = AmCharts.makeChart("inquilinos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 8},
+                {"sector": "", "size": 92}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inquilinos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "8%",
+                "color": "#555"
+            }],
+        });
+        var inversionistas = AmCharts.makeChart("inversionistas", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Inversionistas",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var proveedores = AmCharts.makeChart("proveedores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 24},
+                {"sector": "", "size": 76}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Proveedores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "24%",
+                "color": "#555"
+            }],
+        });
+        var bancos = AmCharts.makeChart("bancos", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 13},
+                {"sector": "", "size": 87}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Bancos",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "13%",
+                "color": "#555"
+            }],
+        });
+        var colaboradores = AmCharts.makeChart("colaboradores", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 26},
+                {"sector": "", "size": 74}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Colaboradores",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "26%",
+                "color": "#555"
+            }],
+        });
+        var consejo = AmCharts.makeChart("consejo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 9},
+                {"sector": "", "size": 91}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Consejo",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "9%",
+                "color": "#555"
+            }],
+        });
+        var otros = AmCharts.makeChart("otros", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 7},
+                {"sector": "", "size": 93}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 40,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "titles": [{
+                "text": "Otros",
+                "size": 14
+            }],
+            "allLabels": [{
+                "y": "52%",
+                "align": "center",
+                "size": 25,
+                "bold": true,
+                "text": "7%",
+                "color": "#555"
+            }],
+        });
+        var interno = AmCharts.makeChart("interno", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 40},
+                {"sector": "", "size": 60}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 50,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 20,
+                "bold": true,
+                "text": "Interno",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "40%",
+                "color": "#555"
+            }],
+        });
+        var externo = AmCharts.makeChart("externo", {
+            "type": "pie",
+            "theme": "none",
+            "dataProvider": [{"sector": "", "size": 60},
+                {"sector": "", "size": 40}],
+            "valueField": "size",
+            "titleField": "sector",
+            "labelText": "",
+            "balloonText": "",
+            "colors": ["#DC291E", "#939598"],
+            "startDuration": 0,
+            "innerRadius": 50,
+            "pullOutRadius": 30,
+            "marginTop": 10,
+            "allLabels": [{
+                "y": "49%",
+                "align": "center",
+                "size": 20,
+                "bold": true,
+                "text": "Externo",
+                "color": "#555"
+            }, {
+                "y": "43%",
+                "align": "center",
+                "size": 15,
+                "text": "60%",
+                "color": "#555"
+            }],
+        });
+    </script>
+
+
+
+</body></html>

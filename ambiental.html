@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)./ambiental -->
+<html lang="es" class="js skrollr skrollr-desktop" style="overflow-x: hidden"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Plani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./Plani_files/favicon-plani.png">
+    <style>
+        .preloader,
+        .preloader2,
+        .form-process {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .preloader {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            c
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 999999;
+            background-color: #ffffff;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center !important;
+        }
+
+        .preloader img {
+            width: 200px;
+        }
+
+        .revo-slider-emphasis-text {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            font-family: var(--font-family-elementia);
+            padding: 15px 20px;
+            border-top: 2px solid #FFF;
+            border-bottom: 2px solid #FFF;
+        }
+
+        .revo-slider-desc-text {
+            font-size: 20px;
+            font-family: var(--font-family-elementia);
+            width: 650px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .revo-slider-caps-text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-family: var(--font-family-elementia);
+        }
+
+        .tp-video-play-button {
+            display: none !important;
+        }
+
+        .tp-caption {
+            white-space: nowrap;
+        }
+
+        .search-container {
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            box-shadow: 2em 0 0 black;
+            width: 100%;
+        }
+
+        .search-box {
+            right: 7%;
+        / / right: 0;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            padding-left: 2em;
+        / / -webkit-transform: translateX(20 %);
+        / / transform: translateX(20 %);
+            opacity: 0;
+        / / transition: all 0.4 s 0.3 s;
+            background-color: #222;
+            color: white;
+        }
+
+        .search-box .search-input {
+            border: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            caret-color: white;
+            color: white;
+        }
+
+        .search-box input::placeholder { /* Chrome, Firefox, Opera, Safari 1*/
+            color: white !important;
+            background-color: transparent;
+        }
+
+        .search-box .search-input:-ms-input-placeholder { /* Internet Explorer */
+            color: white;
+            background-color: transparent;
+        }
+
+        .search-box .search-input::-ms-input-placeholder { /* Microsoft Edge */
+            color: white;
+        }
+
+        .search-toggle {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            position: absolute;
+            right: -13px;
+            top: 40px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .search-container.show .search-box {
+            width: calc(50% - 5em);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        .search-container.show {
+            display: inline-block;
+        }
+
+        #buscar .search-toggle i.fa-times {
+            display: none !important;
+        }
+
+        #buscar .search-toggle i.fa-search {
+            display: block;
+        }
+
+        #buscar .search-toggle.active i.fa-times {
+            display: block !important;
+        }
+
+        #buscar .search-toggle.active i.fa-search {
+            display: none !important;
+        }
+
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./ambiental_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-9D4H2RX3TB');
+    </script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body id="body" class="stretched device-xl" style="overflow-x: hidden">
+<div class="preloader text-center" style="display: none;">
+    
+</div>
+<div id="wrapper" class="clearfix">
+
+    <header id="header" class="transparent-header sticky-header">
+        <div id="header-wrap" class="">
+            <div class="container clearfix">
+                <div id="primary-menu-trigger"><i role="presentation" class="icon-reorder"></i></div>
+                <div class="top-header" style="z-index: 9999;">
+
+                </div>
+                <div id="logo" style="max-width: 250px;">
+                    <h1>
+                        <a href="planigrupo/index" class="" data-dark-logo="/static/images/logo-blanco.png"
+                            title="plani">
+                            <img src="./Plani_files/logo-plani-menu.svg" alt="Logo"
+                                style="padding-top: 10px; padding-bottom: 0; width: 210px; height: 65px"></a>
+                    </h1>
+                </div>
+                <div class="container">
+                    <nav id="primary-menu">
+
+
+                        <ul class="sf-js-enabled" style="touch-action: pan-y;">
+                            <li>
+                                <a href="./Plani.html">
+                                    <div>Inicio</div>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="./materialidad.html" class="sf-with-ul">
+                                    <div>Estrategia de Sustentabilidad</div>
+                                </a>
+                                <ul style="display: none;">
+                                    <li class="">
+                                        <a href="./materialidad.html#matriz">
+                                            <div>Matriz</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#grupos">
+                                            <div>Grupos de Interés</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#objetivos">
+                                            <div>Objetivos ODS</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./materialidad.html#actividades">
+                                            <div>Actividades</div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./ambiental.html">
+                                    <div>Ambiental</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./responsabilidad_social.html">
+                                    <div>Social</div>
+                                </a>
+                            </li>
+                            <li class="sub-menu">
+                                <a href="./gobernanza.html" class="sf-with-ul">
+                                    <div>Gobernanza</div>
+                                </a>
+                                <ul style="display: none;">
+                                    <li class="">
+                                        <a href="./gobernanza.html#sistema">
+                                            <div>Sistema de Gobierno</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./gobernanza.html#comites">
+                                            <div>Comités</div>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./gobernanza.html#lineamientos">
+                                            <div>Lineamientos y Políticas</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="./contacto.html">
+                                    <div>Contacto</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+<section id="page-title" class="page-title skrollable skrollable-between" style="background-image: url(&quot;/static/images/headers/plani-ambiental.png&quot;); background-position: 0px -0.959233px;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -200px;">
+    <div class="container clearfix">
+        <h1 class="text-center text-white mb-3">Ambiental</h1>
+    </div>
+</section>
+
+
+
+    
+    <div class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <p class="text-justify">En Planigrupo estamos conscientes que podemos hacer la diferencia con la
+                    creación
+                    de valor ambiental, por ello implementaremos diversas campañas que impulsen la economía circular: el
+                    reuso,
+                    ahorro y concientización de los recursos dentro de nuestras plazas y corporativos, de materiales
+                    tales como
+                    el papel, cartón, PET, vidrio, electrónicos, e incluso energía y agua.</p>
+
+                <div class="col-12 mb-5">
+                    <h1 class="text-center tc-blue mt-5 mb-5">Metas 2023</h1>
+                    <div style="text-align:center;">
+                        <img src="./ambiental_files/metas_ambientales_2023_2.png" style="align-center; width:4000px; height: 250px;" alt="">
+                    </div>
+                  <!--  <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    
+                                    <p>Implementación de campañas de optimización de recursos para clientes,
+                                        colaboradores y proveedores.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/implementacion_campañas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Optimizar el consumo de energía y agua en nuestras propiedades.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/energia_agua.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Brindar talleres y pláticas, sobre la concientización ambiental de los
+                                        colaboradores.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/talleres_platicas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Fortalecer la división de residuos de acuerdo a su tipo.</p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/residuos_v2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Hacer alianzas con diversas organizaciones que persigan el cuidad ambiental
+                                        para brindar apoyo económico y/o voluntariado.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/alianzas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6">
+                                    <p>Aumentar el porcentaje de Plantas de Tratamiento de Aguas Residuales en
+                                        nuestras propiedades.
+                                    </p>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <img src="/static/images/tratamiento_aguas.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!--- 
+                 <p class="text-justify">Para más información, visitar el siguiente enlace:</p>
+                    <div class="image_wrapper">
+                        <a class="banner_page" href="/es/ambiental_info">
+                            <img width="200px" src="/static/images/imagen_ambiental.png" alt="200px">
+                            <div class="overlay">
+                                <div class=" overlay_2">
+                                    <h3 class="text-white">Ambiental</h3>
+                                </div></div>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <section class="py-5">
+            <div class="parallax" style="background-image: url(/static/images/parallax/5.jpg);">
+                <div class="container-fluid container-relative text-white">
+                    <h1 class="text-white text-center">
+                        Para Planigrupo el óptimo uso de los recursos es de suma importancia ya que es una de
+                        las formas más tangibles de contribuir a los objetivos ODS y a su vez impulsar su
+                        desempeño económico o la generación de valor.
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 mb-5">
+        <h1 class="text-center tc-blue mt-5 mb-5">Actividades Relevantes 2022</h1>
+        <div style="text-align:center;">
+            <img src="./ambiental_files/actividades_ambientales_2022_2.png" style="align-center; width:700px; height: 400px;" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+
+                
+                
+
+
+    <link rel="stylesheet" href="./ambiental_files/carousel.eventos.min.css">
+    <style>
+
+    </style>
+
+<section id="eventos" class="s-block pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center tc-blue mt-5 mb-0">Actividades</h1>
+                <div class="d-flex justify-content-end align-items-center mb-5">
+                    <div class="form-inline">
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">Filtrar por:</h3>
+                        <select class="form-control form-control-sm mr-3" name="select_category" id="select_category">
+                            <option value="all">Todas</option>
+                            <option value="Sociales">Sociales</option>
+                            <option value="Ambientales">Ambientales</option>
+                            <option value="Corporativas">Corporativas</option>
+                        </select>
+                        <h3 class="mb-0 mr-3 font-weight-bold text-black">Año</h3>
+                        <select class="form-control form-control-sm" name="select_anno" id="select_anno">
+                            <option value="all">Todo</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="events-list my-3 mx-3">
+                    <div class="row">
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-06-17" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Reciclar-para-ganar-abril-2022.png" data-title="Máquinas de Reciclaje-AIEn" data-url="" data-category="Ambientales" data-description="De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2" data-carousel="[&#39;images/eventos_soc/Reciclar-para-ganar-abril-2022-1.png&#39;, &#39;images/eventos_soc/Reciclar-para-ganar-abril-2022-2.png&#39;]" data-date="2022-06-17">
+                                        <img src="./ambiental_files/Reciclar-para-ganar-abril-2022.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Máquinas de Reciclaje-AIEn
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Máquinas de Reciclaje-AIEn
+                                                </h4>
+                                                <p class="text-white description">De enero-abril 2022 se reciclaron más de 300 mil botellas de plástico equivalentes a una reducción de 17,642 kg de CO2</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-06-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Banco-tapitas-Junio-Ciudadela.png" data-title="Reconocimiento a CiudadelaUV por el banco de tapitas " data-url="" data-category="Ambientales" data-description="Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico." data-carousel="[]" data-date="2022-06-01">
+                                        <img src="./ambiental_files/Banco-tapitas-Junio-Ciudadela.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reconocimiento a CiudadelaUV por el banco de tapitas 
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reconocimiento a CiudadelaUV por el banco de tapitas 
+                                                </h4>
+                                                <p class="text-white description">Reconocimiento al Banco de Tapitas A.C por su participación en Programa de Recolección de Tapitas de plástico.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2022-08-19" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/Reciclar-2022-324-botellas.png" data-title="Reciclar para ganar. Alianza con grupo AIEn" data-url="" data-category="Ambientales" data-description="En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2" data-carousel="[]" data-date="2022-08-19">
+                                        <img src="./ambiental_files/Reciclar-2022-324-botellas.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclar para ganar. Alianza con grupo AIEn
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclar para ganar. Alianza con grupo AIEn
+                                                </h4>
+                                                <p class="text-white description">En lo que va del 2022 se han reciclado 324,448 botellas de plástico, una reducción de 17,642 kg de CO2</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2021-03-04" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/alianza_grupo_alen.png" data-title="Alianza Grupo Alen" data-url="https://www.youtube.com/embed/bGWF2LyXcXQ" data-category="Ambientales" data-description="Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo" data-carousel="[]" data-date="2021-03-04">
+                                        <img src="./ambiental_files/alianza_grupo_alen.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Alianza Grupo Alen
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Alianza Grupo Alen
+                                                </h4>
+                                                <p class="text-white description">Se colocaron 2 máquinas de reciclaje en las plazas Urban Village Garza Sada y Plaza Real Saltillo</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuos_lr.jpg" data-title="Separación de residuos" data-url="" data-category="Ambientales" data-description="Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje." data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./ambiental_files/separacion_residuos_lr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de residuos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de residuos
+                                                </h4>
+                                                <p class="text-white description">Se realiza la separación de cartón, para después recolectarlo y así ayudar a su reciclaje.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event show-event" data-date="2019-10-02" data-category="Sociales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/domo_tragaluceslr.jpg" data-title="Colocación de domos y tragaluces" data-url="" data-category="Sociales" data-description="Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar." data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./ambiental_files/domo_tragaluceslr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Colocación de domos y tragaluces
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Colocación de domos y tragaluces
+                                                </h4>
+                                                <p class="text-white description">Se colocaron 4 domos en el área de food court, los cuales permiten aprovechar la luz solar 7 horas todos los días y se cuentan con 9 tragaluces los cuales permiten aprovechar la luz solar.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2022-03-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos/Helice.png" data-title="Donación de Materiales a Fundación Hélice" data-url="" data-category="Ambientales" data-description="Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales" data-carousel="[]" data-date="2022-03-01">
+                                        <img src="./ambiental_files/Helice.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Donación de Materiales a Fundación Hélice
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Donación de Materiales a Fundación Hélice
+                                                </h4>
+                                                <p class="text-white description">Se realizó una donación con la cual se obtuvieron diversos beneficios ambientales</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuos_lr.jpg" data-title="Separación de residuos y reciclaje" data-url="" data-category="Ambientales" data-description="Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019" data-carousel="[]" data-date="2019-10-02">
+                                        <img src="./ambiental_files/separacion_residuos_lr.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de residuos y reciclaje
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de residuos y reciclaje
+                                                </h4>
+                                                <p class="text-white description">Se realiza la separación de residuos orgánicos, vidrio, cartón y plástico. Para ayudar al medio ambiente. Durante el año 2018 y lo que va del 2019</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias" data-carousel="[&#39;images/eventos_soc/cambio_luminarias_mdv1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv2.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv3.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv4.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv5.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv6.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv7.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv8.png&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv9.png&#39;]" data-date="2019-10-02">
+                                        <img src="./ambiental_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se instalo tecnología led en el exterior e interior de la plaza. Se cambiaron 181 luminarias</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_equipos_ahorradores.png" data-title="Instalación de equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron equipos ahorradores de agua en lavamanos y sanitarios." data-carousel="[&#39;images/eventos_soc/instalacion_equipos_ahorradores1.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores2.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores3.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores4.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores5.jpg&#39;, &#39;images/eventos_soc/instalacion_equipos_ahorradores6.jpg&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/instalacion_equipos_ahorradores.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron equipos ahorradores de agua en lavamanos y sanitarios.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Instalación de mingitorios secos y equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico" data-carousel="[&#39;images/eventos_soc/instalacion_mingitorios_pua11.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua22.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua33.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron mingitorios secos para el ahorro de agua, equipos ahorradores de agua en lavamanos y baños, así como equipos ahorradores de papel higiénico</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/proteccion_naturaleza.png" data-title="Protección de la naturaleza" data-url="" data-category="Ambientales" data-description="Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/proteccion_naturaleza.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Protección de la naturaleza
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Protección de la naturaleza
+                                                </h4>
+                                                <p class="text-white description">Con el apoyo de protección civil, se tiene la preservación de un árbol ficus y solo se poda con autorización de dichas dependencias ya que es un medio natural de producción de oxigeno.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_migitorios_o.png" data-title="Cambio de mingitorios" data-url="" data-category="Ambientales" data-description="Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/cambio_migitorios_o.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de mingitorios
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de mingitorios
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_sensores_lus.png" data-title="Instalación de sensores de luz" data-url="" data-category="Ambientales" data-description="Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/instalacion_sensores_lus.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de sensores de luz
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de sensores de luz
+                                                </h4>
+                                                <p class="text-white description">Se instalaron sensores de luz, para tener un ahorro energético y reducir las emisiones de co2 en la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_o.png" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED." data-carousel="[&#39;images/eventos_soc/cambio_luminarias_o1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_o2.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/cambio_luminarias_o.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron 85 luminarias ordinarias a luminarias con tecnología LED.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/reciclaje_recoleccion.png" data-title="Reciclaje y recolección" data-url="" data-category="Ambientales" data-description="Se realizan recolecciones mensuales de cartón y reciclaje." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/reciclaje_recoleccion.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclaje y recolección
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclaje y recolección
+                                                </h4>
+                                                <p class="text-white description">Se realizan recolecciones mensuales de cartón y reciclaje.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminaria.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_luminaria1.png&#39;, &#39;images/eventos_soc/cambio_luminaria2.png&#39;, &#39;images/eventos_soc/cambio_luminaria3.png&#39;, &#39;images/eventos_soc/cambio_luminaria4.png&#39;, &#39;images/eventos_soc/cambio_luminaria5.png&#39;, &#39;images/eventos_soc/cambio_luminaria6.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/cambio_luminaria.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de luminarias en etapas iniciando desde el año 2016 para reducir el consumo energético y en el 2017 se siguieron cambiando luminarias en el exterior e interior de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_residuo_pa.jpg" data-title="Reciclaje y separación de residuos" data-url="" data-category="Ambientales" data-description="Se implementa la recolección de residuos y reciclaje desde el 2015." data-carousel="[&#39;images/eventos_soc/separacion_residuo_pa1.png&#39;, &#39;images/eventos_soc/separacion_residuo_pa2.png&#39;, &#39;images/eventos_soc/separacion_residuo_pa3.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/separacion_residuo_pa.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Reciclaje y separación de residuos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Reciclaje y separación de residuos
+                                                </h4>
+                                                <p class="text-white description">Se implementa la recolección de residuos y reciclaje desde el 2015.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Cambio de sanitarios" data-url="" data-category="Ambientales" data-description="Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019." data-carousel="[&#39;images/eventos_soc/instalacion_mingitorios_pua1.png&#39;, &#39;images/eventos_soc/instalacion_mingitorios_pua2.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de sanitarios
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de sanitarios
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron mingitorios y baños para el ahorro de agua. Cambiando a sistemas e agua libre en el 2016 y cambios en planta baja y área de restaurantes en el año 2018 y 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias" data-url="" data-category="Ambientales" data-description="Se colocaron luminarias ahorrativas para el cuidado del medio ambiente" data-carousel="[&#39;images/eventos_soc/cambio_luminarias_mdv1.1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv2.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv3.1.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv4.jpg&#39;, &#39;images/eventos_soc/cambio_luminarias_mdv5.1.jpg&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias
+                                                </h4>
+                                                <p class="text-white description">Se colocaron luminarias ahorrativas para el cuidado del medio ambiente</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_basura_carton.png" data-title="Separación de basura y ley que prohibe uso de popotes y bolsas de plástico" data-url="" data-category="Ambientales" data-description="Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019." data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/separacion_basura_carton.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                                </h4>
+                                                <p class="text-white description">Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_mingitorios_pua.png" data-title="Instalación de mingitorios secos y equipos ahorradores de agua y papel" data-url="" data-category="Ambientales" data-description="Se instalaron mingitorios secos para el ahorro de agua" data-carousel="[]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/instalacion_mingitorios_pua.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de mingitorios secos y equipos ahorradores de agua y papel
+                                                </h4>
+                                                <p class="text-white description">Se instalaron mingitorios secos para el ahorro de agua</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-30" data-category="Sociales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_jardines_camellos.png" data-title="Cambio de jardinería y programas de adopción de camellones" data-url="" data-category="Sociales" data-description="Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua." data-carousel="[]" data-date="2019-09-30">
+                                        <img src="./ambiental_files/cambio_jardines_camellos.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de jardinería y programas de adopción de camellones
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de jardinería y programas de adopción de camellones
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-12" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/recoleccion_electrodomesticos_cgp.png" data-title="Recolección de Electrodomésticos" data-url="" data-category="Ambientales" data-description="Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos" data-carousel="[]" data-date="2019-09-12">
+                                        <img src="./ambiental_files/recoleccion_electrodomesticos_cgp.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Recolección de Electrodomésticos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Recolección de Electrodomésticos
+                                                </h4>
+                                                <p class="text-white description">Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial. Se apoyó con espacio dentro de la plaza para juntar los electrodomésticos recolectados. Se lograron juntar 18,640 kg de diversos electrodomésticos</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/inst_lumi.png" data-title="Instalación de luminaria ahorrativa y colocación de solatubes" data-url="" data-category="Ambientales" data-description="Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/inst_lumi.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de luminaria ahorrativa y colocación de solatubes
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de luminaria ahorrativa y colocación de solatubes
+                                                </h4>
+                                                <p class="text-white description">Se colocaron luminarias ahorradoras en interior y exterior con tecnología LED para disminuir el consumo de energía.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/equipos_aire.png" data-title="Equipos de aire acondicionado" data-url="" data-category="Ambientales" data-description="Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente." data-carousel="[&#39;images/eventos_soc/equipos_aire1.jpg&#39;, &#39;images/eventos_soc/equipos_aire2.jpg&#39;, &#39;images/eventos_soc/equipos_aire3.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/equipos_aire.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Equipos de aire acondicionado
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Equipos de aire acondicionado
+                                                </h4>
+                                                <p class="text-white description">Se utilizan equipos de aire acondicionado tipo r410 que son ecológicos y ayudan al medio ambiente.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-10-01" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_basura_carton.png" data-title="Separación de basura y ley que prohibe uso de popotes y bolsas de plástico" data-url="" data-category="Ambientales" data-description="Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019." data-carousel="[&#39;images/eventos_soc/separacion_basura_carton1.jpg&#39;, &#39;images/eventos_soc/separacion_basura_carton2.png&#39;, &#39;images/eventos_soc/separacion_basura_carton3.png&#39;]" data-date="2019-10-01">
+                                        <img src="./ambiental_files/separacion_basura_carton.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y ley que prohibe uso de popotes y bolsas de plástico
+                                                </h4>
+                                                <p class="text-white description">Se implementó la ley que prohíbe el uso de popotes y bolsas de plástico. Abril 2019.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/separacion_bac.png" data-title="Separación de basura y cartón" data-url="" data-category="Ambientales" data-description="Se colocaron cestos de basura para su separación (orgánica e inorgánica)." data-carousel="[&#39;images/eventos_soc/separacion_bac1.jpg&#39;, &#39;images/eventos_soc/separacion_bac2.jpg&#39;, &#39;images/eventos_soc/separacion_bac3.jpg&#39;, &#39;images/eventos_soc/separacion_bac4.jpg&#39;, &#39;images/eventos_soc/separacion_bac5.jpg&#39;, &#39;images/eventos_soc/separacion_bac6.jpg&#39;, &#39;images/eventos_soc/separacion_bac7.jpg&#39;, &#39;images/eventos_soc/separacion_bac8.jpg&#39;, &#39;images/eventos_soc/separacion_bac9.png&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/separacion_bac.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Separación de basura y cartón
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Separación de basura y cartón
+                                                </h4>
+                                                <p class="text-white description">Se colocaron cestos de basura para su separación (orgánica e inorgánica).</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminaria_led_plazamonumento.png" data-title="Cambio de luminaria a LED" data-url="" data-category="Ambientales" data-description="Se realizó el cambio de luminaria a tecnología LED, dentro y fuera de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_luminaria_led_plazamonumento1.png&#39;, &#39;images/eventos_soc/cambio_luminaria_led_plazamonumento2.png&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio_luminaria_led_plazamonumento.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminaria a LED
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminaria a LED
+                                                </h4>
+                                                <p class="text-white description">Se realizó el cambio de luminaria a tecnología LED, dentro y fuera de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_led_pbm.png" data-title="Cambio a lámparas LED y Programa de recolección de cartón" data-url="" data-category="Ambientales" data-description="Se cambiaron lámparas en interior y exterior para el ahorro de energía." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio_led_pbm.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio a lámparas LED y Programa de recolección de cartón
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio a lámparas LED y Programa de recolección de cartón
+                                                </h4>
+                                                <p class="text-white description">Se cambiaron lámparas en interior y exterior para el ahorro de energía.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/centro_a.png" data-title="Centro de acopio de reciclado electrónico" data-url="" data-category="Ambientales" data-description="Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/centro_a.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Centro de acopio de reciclado electrónico
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Centro de acopio de reciclado electrónico
+                                                </h4>
+                                                <p class="text-white description">Acopio de computadoras, CPU, teclados, mouse para donarlo a alguna asociación.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_l.jpg" data-title="Cambio de luminarias y programa de reciclaje" data-url="" data-category="Ambientales" data-description="En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza." data-carousel="[&#39;images/eventos_soc/cambio_l1.jpg&#39;, &#39;images/eventos_soc/cambio_l2.jpg&#39;, &#39;images/eventos_soc/cambio_l3.jpg&#39;, &#39;images/eventos_soc/cambio_l4.jpg&#39;, &#39;images/eventos_soc/cambio_l5.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio_l.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias y programa de reciclaje
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias y programa de reciclaje
+                                                </h4>
+                                                <p class="text-white description">En el 2018 y lo que va del 2019 se reemplazaron luminarias de halógeno y fluorescentes a LED, dentro y fuera de la plaza.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_j.jpg" data-title="Cambio de jardinería y programa adopción de camellones" data-url="" data-category="Ambientales" data-description="Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua." data-carousel="[&#39;images/eventos_soc/cambio_j1.jpg&#39;, &#39;images/eventos_soc/cambio_j2.jpg&#39;, &#39;images/eventos_soc/cambio_j3.jpg&#39;, &#39;images/eventos_soc/cambio_j4.jpg&#39;, &#39;images/eventos_soc/cambio_j5.jpg&#39;, &#39;images/eventos_soc/cambio_j6.jpg&#39;, &#39;images/eventos_soc/cambio_j7.jpg&#39;, &#39;images/eventos_soc/cambio_j8.jpg&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio_j.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de jardinería y programa adopción de camellones
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de jardinería y programa adopción de camellones
+                                                </h4>
+                                                <p class="text-white description">Se realizo el cambio de jardinería a plantas desérticas para reducir el consumo de agua.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio_luminarias_mdv.jpg" data-title="Cambio de luminarias y proyecto solatubes" data-url="" data-category="Ambientales" data-description="Se realizó el cambio de luminarias en interiores y exteriores a tecnología LED. Se cambiaron un total de 183 luminarias." data-carousel="[]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio_luminarias_mdv.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminarias y proyecto solatubes
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminarias y proyecto solatubes
+                                                </h4>
+                                                <p class="text-white description">Se realizó el cambio de luminarias en interiores y exteriores a tecnología LED. Se cambiaron un total de 183 luminarias.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/cambio.jpg" data-title="Cambio de luminaras a tecnologia LED" data-url="" data-category="Ambientales" data-description="Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional." data-carousel="[&#39;images/eventos_soc/cambio1.jpg&#39;, &#39;images/eventos_soc/cambio2.jpg&#39;, &#39;images/eventos_soc/cambio3.jpg&#39;, &#39;images/eventos_soc/cambio4.jpg&#39;, &#39;images/eventos_soc/cambio5.png&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/cambio.jpg" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Cambio de luminaras a tecnologia LED
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Cambio de luminaras a tecnologia LED
+                                                </h4>
+                                                <p class="text-white description">Se realizaron cambios en luminarias para apoyar al medio ambiente, ya que consumen 8.9 veces menos que una bombilla tradicional.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2019-09-12" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/recoleccion_electrodomesticos_cgp.png" data-title="Recolección de Electrodomésticos" data-url="" data-category="Ambientales" data-description="Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial." data-carousel="[]" data-date="2019-09-12">
+                                        <img src="./ambiental_files/recoleccion_electrodomesticos_cgp.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Recolección de Electrodomésticos
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Recolección de Electrodomésticos
+                                                </h4>
+                                                <p class="text-white description">Colectivo Ambiental Isla Verde nos invitó a sumarnos a su campaña de reciclaje de electrodomésticos, la cual fue llevada a cabo dentro de nuestro centro comercial.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+
+
+
+
+
+
+
+
+
+
+                            <article class="col-md-4 event-item all py-1 px-1 hide-event" data-date="2021-10-02" data-category="Ambientales">
+                                <div class="image_wrapper2">
+                                    <a href="./ambiental#" class="banner_page modal-galery" data-mdb-toggle="modal" data-mdb-target="#GaleryModal1" data-img="/static/images/eventos_soc/instalacion_sol.png" data-title="Instalación de solatubes y mingitorios de gravedad" data-url="" data-category="Ambientales" data-description="Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica." data-carousel="[&#39;images/eventos_soc/instalacion_sol1.png&#39;, &#39;images/eventos_soc/instalacion_sol2.png&#39;]" data-date="2021-10-02">
+                                        <img src="./ambiental_files/instalacion_sol.png" width="100%" class="cover">
+                                        <div class="overlay">
+                                            <div class="bg-overlay position-absolute w-100 h-100"></div>
+                                            <h4 class="event-title-over text-white">
+                                                Instalación de solatubes y mingitorios de gravedad
+                                            </h4>
+                                            <div class="overlay_3">
+                                                <h4 class="event-title-over text-white">
+                                                    Instalación de solatubes y mingitorios de gravedad
+                                                </h4>
+                                                <p class="text-white description">Se instalaron solatubes para el aprovechamiento de luz natural y disminución de energía eléctrica.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        
+                        <article id="no-event" class="col-md-3 event-item hide-event">
+                            <h3 class="mb-0 uppercase">
+                                No hay noticias.
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+                <div id="paginationholder" class="mb-3 mb-lg-0 d-flex justify-content-end"><ul id="pagination" class="pagination"><li class="page-item prev disabled"><a href="./ambiental#" class="page-link"><i class="icon-arrow-left"></i></a></li><li class="page-item active"><a href="./ambiental#" class="page-link">1</a></li><li class="page-item"><a href="./ambiental#" class="page-link">2</a></li><li class="page-item"><a href="./ambiental#" class="page-link">3</a></li><li class="page-item"><a href="./ambiental#" class="page-link">4</a></li><li class="page-item"><a href="./ambiental#" class="page-link">5</a></li><li class="page-item next"><a href="./ambiental#" class="page-link"><i class="icon-arrow-right"></i></a></li></ul></div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade popup" id="GalleryModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-body">
+                    <img class="cover event-img" src="./ambiental">
+                    <iframe class="event-url" width="100%" height="auto" src="./ambiental_files/saved_resource.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="min-height: 400px">
+
+                    </iframe>
+                    <!--carousel-->
+                    <div id="carousel-eventos" class="row">
+                        <div class="col-12 mb-5">
+                            <div id="carousel-eventos-tree" class="nobgcolor notopmargin owl-carousel owl-carousel-full image-carousel carousel-widget owl-loaded owl-drag" data-margin="" data-loop="true" data-nav="true" data-autoplay="5000" data-items="1" data-pagi="true" data-items-xs="1" data-items-sm="1" data-items-md="1" data-items-lg="1" data-items-xl="1" data-auto-height="true">
+                            <div class="owl-stage-outer"><div class="owl-stage"></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+                        </div>
+                    </div>
+                    <h4 class="event-title card-title mb-0">
+                    </h4>
+                    <i class="fa fa-calendar"></i>
+                    <span class="event-date">
+                    </span>
+                    <i class="fa fa-folder"></i>
+
+                    <span class="event-category">
+                    </span>
+                    <p class="event-description card-text mt-5">
+                    </p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <button type="button" class="btn btn-danger close-btn card-link" data-mdb-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+<footer id="site-footer" class="site-footer pt-2 pb-1 position-relative rs-footer">
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-1">
+                <div class="about-widget">
+                    <h3 class="footer-title">Oficinas Corporativas</h3>
+                    <div class="ml-1 mb-1 text-justify d-flex flex-column justify-content-between align-items-baseline">
+                        <span class="text-center bolder">Corporativo Estado de México</span>
+                        <p class="mb-1">
+                            Av. Conscripto 360
+                            Paseo Hipódromo, PB, local SA002,
+                            Col. Lomas Hipódromo
+                            Naucalpan de Juárez 53900
+                            Estado de México.
+                        </p>
+                        <span class="text-center bolder mt-2">Corporativo Monterrey MTY</span>
+                        <p class="mb-0">
+                            Av. Eugenio Garza Sada #3431
+                            Urban Village Garza Sada, P1, local SA012,
+                            Col. Arroyo Seco CP. 64740
+                            Monterrey, Nuevo León.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 cont mb-1">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="mb-1">
+
+                    <a target="_blank" class="news-note" href="https://www.planigrupo.com.mx/" style="color:#ffffff!important"><i class="fa fa-globe" aria-hidden="true"></i>
+                        www.planigrupo.com.mx</a>
+                </p>
+                <p class="news-note mb-1"><i class="fa fa-phone" aria-hidden="true"></i> Tel. (55) 9177 0870</p>
+
+                <p class="mb-1">
+                    <a class="news-note" href="mailto:relacioninversionistas@planigrupo.com" style="color:#ffffff!important"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        relacioninversionistas@planigrupo.com
+                    </a></p>
+
+
+            </div>
+            <div class="col-md-4 mb-1">
+                <h3 class="footer-title">Más información</h3>
+                <div class="d-flex flex-column justify-content-around align-items-baseline">
+                    <p class="mb-1">
+                        Reciba periódicamente información ASG relacionada con nuestra compañía.
+                    </p>
+                    <form class="form mb-2 pt-2 text-center was-validated" method="post" id="newsletter-form-footer" novalidate="novalidate">
+                        <div class="form-group mb-1">
+                            <input class="col-md-8 col-sm-7 col-8" id="fieldEmail" name="email" type="email" placeholder="Correo electrónico" required="" data-msg-required="" data-msg-email="">
+                            <button id="newsletter-submit-footer" type="submit" class="btn">Suscribirse</button>
+                        </div>
+                        <div class="alert-message-footer"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 align-self-center">
+                <p class="copyright text-center my-0">
+                    © 2023 plani - Diseñado y generado por
+                    <a href="https://www.vertds.com/">
+                    <img class="ml-1" src="./ambiental_files/vert-white.svg" width="90px" alt=""></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="gotoTop" role="presentation" class="icon-angle-up"></div>
+
+
+
+<script src="./ambiental_files/jquery.js.descarga"></script>
+<script src="./ambiental_files/plugins.min.js.descarga"></script>
+<script src="./ambiental_files/functions.min.js.descarga"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="./ambiental_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/style.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/dark.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/font-icons.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/fontello.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/animate.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/settings.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/layers.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/navigation.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/tania.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/david.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/al.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/footer.min.css">
+<link rel="stylesheet" type="text/css" href="./ambiental_files/responsive.min.css">
+
+<script>var locale = 'es'</script>
+
+
+    <style>
+
+    </style>
+
+
+<script>
+    $(function () {
+        $("#subscription").click(function () {
+            if ($("#subscription_form").valid()) {
+                $('.preloader').show()
+                $.ajax({
+                    type: 'POST',
+                    url: "/es/send-subscription",
+                    dataType: 'json',
+                    data: $("#subscription_form").serialize(),
+                    complete: function (a, b) {
+                        console.log("error", a, b)
+                        $('.preloader').delay(1500).fadeOut(500);
+
+                    },
+                    success: function (response) {
+                        alert('Gracias por subscribirse' + $("#email_subscription").val());
+                        $("#email_subscription").val('');
+                        $('.preloader').fadeOut(500);
+
+                    }
+                });
+            } else {
+                alert('Por favor escriba un correo electronico valido');
+            }
+        })
+    });
+
+    $(".scroll-to-target").on('click', function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        // animate
+        $('html, body, header').animate({
+            scrollTop: $(target).offset().top - ($(window).width() > 768 ? 80 : 15)
+        }, 1000);
+    });
+
+    if ($('#newsletter-form-footer').length) {
+        var newsletter_form_footer = $('#newsletter-form-footer');
+        newsletter_form_footer.validate({
+            highlight: function (element) {
+                $(element)
+                    .addClass('is-invalid')
+                    .removeClass('is-valid')
+                    .parent()
+                    .removeClass('has-success')
+                    .addClass('has-danger');
+            },
+            success: function (label, element) {
+                $(element)
+                    .removeClass('is-invalid')
+                    .addClass('is-valid')
+                    .parent()
+                    .removeClass('has-danger')
+                    .addClass('has-success')
+                    .find('label.error')
+                    .remove();
+            },
+            errorPlacement: function (error, element) {
+                if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
+                    error.appendTo(element.parent().parent());
+                } else {
+                    error.insertAfter(element);
+                }
+            }
+        });
+
+        var text_success_suscrb = (locale === 'es') ? 'Correo enviado satisfactoriamente.' : 'Mail sent successfully.';
+        var text_danger_suscrb = (locale === 'es') ? 'Hubo un error al enviar su correo.' : 'There was an error sending your email.';
+
+        function button_loading(button, icon, finish) {
+            if (!finish) {
+                $(button).prepend(icon);
+                $(button).addClass('loading');
+            } else {
+                $(button + ' i').remove();
+                $(button).removeClass('loading');
+            }
+        }
+
+        function alert_animations(container, type, text) {
+            var htmlAlert = '<div class="alert alert-' + type + ' mt-2">' + text + '</div>';
+            $(container).prepend(htmlAlert);
+            $(container + " .alert").first().hide().fadeIn(800).delay(2000).fadeOut(800, function () {
+                $(this).remove();
+            });
+        }
+
+        newsletter_form_footer.submit(function (e) {
+            e.preventDefault();
+            if (newsletter_form_footer.valid()) {
+                button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>');
+                $.ajax({
+                    type: 'POST',
+                    url: '/es/send-subscription',
+                    data: newsletter_form_footer.serialize(),
+                    success: function (response) {
+                        if (response.success === 'true') {
+                            $('input').val('');
+                            $('input').removeClass('is-valid valid');
+                            setTimeout(function () {
+                                $('#newsletter-submit-footer').addClass('loading');
+                            }, 50);
+                            alert_animations('.alert-message-footer', 'success', text_success_suscrb);
+                        } else {
+                            alert_animations('.alert-message-footer', 'danger', text_danger_suscrb);
+                        }
+                        button_loading('#newsletter-submit-footer', '<i class="fa fa-spinner fa-spin mr-2"></i>', true);
+                    }
+                });
+            }
+        });
+    }
+</script>
+
+
+    <script src="./ambiental_files/jquery.waypoints.min.js.descarga"></script>
+    <script src="./ambiental_files/countTo.js.descarga"></script>
+    <script src="./ambiental_files/jquery.twbsPagination.min.js.descarga"></script>
+    <script src="./ambiental_files/carousel.eventos.js.descarga"></script>
+    <script>
+        $(window).on('load', function () {
+            $('.finn-counto').each(function () {
+                finn_waypoint('#' + $(this).attr('id'));
+                finn_counto('#' + $(this).attr('id'));
+            });
+        });
+
+        function finn_waypoint(elemento) {
+            var waypoint = new Waypoint({
+                element: $(elemento),
+                handler: function (direction) {
+                    $(elemento + ' .count').trigger('on-appear');
+                },
+                offset: '75%',
+                triggerOnce: true
+            })
+        }
+
+        function finn_counto(elemento) {
+            if ($().countTo) {
+                $(elemento + ' .count').on('on-appear', function () {
+                    $(elemento + ' .honeycomb-path.honeycomb-1').addClass('honeycomb-animated');
+
+                    $(this).each(function () {
+                        var to = parseFloat($(this).data('to')),
+                            speed = parseInt($(this).data('speed')),
+                            decimals = parseInt($(this).data('decimals'));
+
+                        $(this).countTo({
+                            to: to,
+                            speen: speed,
+                            decimals: decimals,
+                            formatter: function (value, options) {
+                                return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                            },
+                            onComplete: function (value) {
+                                if (value === 1.9)
+                                    return this.innerHTML += '%';
+                            }
+
+                        });
+                    });
+                }); //counter
+            }
+        }
+    </script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 45000,
+            autoplayHoverPause: true,
+            items: 1,
+        });
+    </script>
+
+    <script src="./ambiental_files/amcharts.js.descarga"></script>
+    <script src="./ambiental_files/serial.js.descarga"></script>
+    <script src="./ambiental_files/pie.js.descarga"></script>
+    <script src="./ambiental_files/ambiental.min.js.descarga"></script>
+
+
+
+</body></html>
